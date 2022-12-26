@@ -1,0 +1,10 @@
+<div class="cards">
+  <div *ngFor="let movie of movies" class="card">
+    <div class="">
+      <img [src]="urlImages + movie.poster_path" alt="" width="200px">
+      <p style="max-width: 200px; word-break: break-all;">{{movie.title}}</p>
+      <p>{{movie.release_date | date: 'dd/MM/yyyy'}}</p>
+    </div>
+  </div>
+
+</div>
